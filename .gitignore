@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Run artifacts: normalised decks, manifests, page images, annotations, previews, output
+work/
+work_*/
+out/
+output/
+*.pdf
+preview_*.png
+front_p*.png
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.tmp

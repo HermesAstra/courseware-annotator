@@ -1,0 +1,13 @@
+# Normalise line endings inside the repository, keep the platform default on checkout.
+* text=auto
+
+# Shell scripts must stay LF on every platform: a CRLF line ending breaks `#!/usr/bin/env bash`
+# with "bad interpreter" / stray \r errors.
+*.sh text eol=lf
+
+# PowerShell is a Windows-first tool in this repo; CRLF keeps it readable in Windows editors.
+*.ps1 text eol=crlf
+
+# Annotations and configs are diffed and merged; LF everywhere.
+*.json text eol=lf
+*.md text eol=lf
